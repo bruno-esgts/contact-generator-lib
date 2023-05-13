@@ -4,6 +4,31 @@
 
 ## Getting started
 
+### Importing the library
+In order to use this library you first need to add the maven dependency
+on your project.
+
+You can do it by adding this in your projects `pom.xml`
+```xml
+<dependency>
+  <groupId>pt.brunojesus</groupId>
+  <artifactId>contacts-lib</artifactId>
+  <version>1.0</version>
+</dependency>
+```
+
+The dependency listed above is not on maven central, so you need to make
+sure you add the repository to your project's `pom.xml` as well.
+```xml
+    <repositories>
+        <repository>
+            <id>mvn-brunojesus</id>
+            <name>Bruno Jesus MVN Repo</name>
+            <url>https://mvn.brunojesus.pt/releases</url>
+        </repository>
+    </repositories>
+```
+
 ### Code example
 Generate two lists of contacts executing a benchmark.
 You can use this code to check if it's worth it to use
